@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAFFIC LIGHT</title>
+<style>
+    .light{
+        position: absolute;
+    margin-left: 35%;
+    font-size: 50px;
+    width: 200px;
+    border-radius: 15px;
+    transform: translateY(80%);
+    background-image: linear-gradient(red,yellow,green);
+    }
+.h1{
+    background-color: black;
+    height: 750px;
+    width: 350px;
+    border-radius: 60px;
+    border-color: black;
+    position: absolute;
+    transform: translateY(20%);
+    margin-left: 33%;
+}
+    .div {
+        margin-top: 20px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 1px solid;
+    transform: translateX(40%);
+        background-color: white;
+    
+    }  
+    button {
+        height: 60px;
+        width: 110px;
+        transform: translateX(10%);
+        margin-top: 50px;
+        font-size: 35px;
+        border-radius: 20px;
+        border-color: blue; 
+        background-color: black;
+        
+        color: white;
+    }    
+</style>
+</head>
+<body>
+    <div class="light">SIGNAL</div>
+    <div class="h1">
+<div class="div" id="div1_color"></div>
+<div class="div" id="div2_color"></div>
+<div class="div" id="div3_color"></div>
+<button onclick="red_color()">Red</button>
+<button onclick="yellow_color()">Yellow</button>
+<button onclick="green_color()">Green</button>
+</div>
+<script>
+    function red_color() {
+        document.getElementById('div1_color').style.backgroundColor = 'red';
+        }
+        function yellow_color() {
+        document.getElementById('div2_color').style.backgroundColor = 'yellow';
+        }
+        function green_color() {
+        document.getElementById('div3_color').style.backgroundColor ="green";
+        }
+</script>   
+</body>
+</html>
